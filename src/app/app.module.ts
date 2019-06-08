@@ -3,14 +3,37 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TopNavigationComponent } from './nav/top-navigation/top-navigation.component';
+import { BottomNavigationComponent } from './nav/bottom-navigation/bottom-navigation.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import { HomeComponent } from './main/home/home.component';
+import { ServicesComponent } from './main/services/services.component';
+import { AdviceComponent } from './main/advice/advice.component';
+import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
+import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopNavigationComponent,
+    BottomNavigationComponent,
+    HomeComponent,
+    ServicesComponent,
+    AdviceComponent,
+    RemedyBlogComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

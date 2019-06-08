@@ -1,0 +1,52 @@
+.toolbar
+{
+    background: rgb(27, 172, 99);
+    width: 100%;
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .logo{
+      margin: 5px;
+      padding: 8px 8px 8px 8px;
+      color: white;
+      background-color: rgb(238, 36, 147);
+      font-style: normal;
+      font-family:Brush Script MT, Brush Script Std, cursive;
+  }
+
+.d-links{
+    display: none;
+}
+.header{
+    z-index: 1;
+}
+.material-icons{
+    line-height: 0.8em;
+    color: rgb(218, 13, 132);
+}
+
+.example-icon{
+background:none;
+border: 0;
+padding: 5px 8px;
+color: white;
+}
+
+.menubutton{
+    color: white;
+}
+
+@media screen and (min-width: 780px) {
+.d-links{
+    display: flex;
+}
+
+.m-links{
+    display: none;
+}
+}

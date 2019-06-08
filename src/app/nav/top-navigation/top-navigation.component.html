@@ -1,0 +1,58 @@
+<div class="header">
+<mat-toolbar class="toolbar">
+  <div class="logo">
+Healthy 
+<mat-icon class="menubutton">local_florist</mat-icon>
+Living
+  </div>
+  <span class="example-spacer"></span>
+  <div class="d-links">
+    <div>
+        <a mat-button routerLink="/home">
+         <span>Home</span> 
+        </a>
+    </div>
+<div>
+    <a mat-button routerLink="/services">
+      Services
+    </a>
+</div>
+  
+   <div>
+      <a mat-button routerLink="/advice">
+        Advice
+      </a>
+   </div>
+    <div>
+        <a mat-button routerLink="/blog">
+          Remedy Blog
+        </a>
+    </div>
+  </div>
+
+  <div class="m-links">
+      <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon">
+          <mat-icon class="menubutton">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/home">
+            <mat-icon>home</mat-icon>
+            <span>Home</span>
+          </button>
+          <button mat-menu-item routerLink="/services">
+            <mat-icon>spa</mat-icon>
+            <span>Services</span>
+          </button>
+          <button mat-menu-item routerLink="/advice">
+            <mat-icon>whatshot</mat-icon>
+            <span>Advice</span>
+          </button>
+          <button mat-menu-item routerLink="/remedy">
+            <mat-icon>store_mall_directory</mat-icon>
+            <span>Remedy Blog</span>
+            </button>
+            </mat-menu>
+  </div>
+  </mat-toolbar>
+  </div>
+
