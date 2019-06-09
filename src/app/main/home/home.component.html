@@ -1,26 +1,35 @@
 <div class="content">
 <div class="image">
-    <div >
-            <h3>Welcome to our website!</h3>
-    </div>
-    <div>
-            <h3>We provide you online diet recommendation</h3>
-    </div>
-    <div>
-        <h3>for your health</h3>
-    </div>
-</div>
-<div class="search">
-        <mat-card>
-        <mat-card-content>
+        <div class="welcome">
+                        <div >
+                                    <h3>Welcome to our website!</h3>
+                                </div>
+                                <div>
+                                        <h3>We provide you online diet recommendation</h3>
+                                </div>
+                                <div>
+                                    <h3>for your health</h3>
+                                </div>
+                            
+        </div>
+    
+    <mat-card>
+        <mat-card-content class="head">
                 <h2>Please Enter your disease</h2>
                 </mat-card-content>
-                <mat-form-field appearance="outline">
-                        <mat-label>Outline form field</mat-label>
-                        <input matInput placeholder="Placeholder">
-                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                        <mat-hint>Hint</mat-hint>
-                      </mat-form-field>
+                <div id="test" class="field" >
+                        <mat-form-field appearance="fill" class="fullwidth">
+                                <mat-label>Enter Disease</mat-label>
+                                <input matInput  [pattern]="'^[a-zA-Z ]*$'" [formControl]="disease"> 
+                                <mat-error *ngIf="disease.invalid && disease.touched">
+                                        <small *ngIf="disease.errors?.pattern" class="text-danger">Invalid input</small>
+                                      </mat-error>
+                                      <button mat-icon-button matSuffix color="primary" aria-label="Example icon-button with a heart icon">
+                                        <mat-icon>search</mat-icon>
+                                      </button>
+                              </mat-form-field>
+                </div>
                 </mat-card>
 </div>
+
 </div>

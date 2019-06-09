@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  disease = new FormControl('', [Validators.pattern('^[a-zA-Z ]*$')]);
 
 }
