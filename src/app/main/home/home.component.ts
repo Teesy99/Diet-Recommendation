@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators } from '@angular/forms';
+import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -8,11 +8,22 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
  
-  constructor() { }
+  
+  searchForm: FormGroup;
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit() {
+
+    this.searchForm = this.fb.group({
+      disease: ['',  Validators.compose([
+        Validators.pattern('^[a-zA-Z ]*$'), Validators.minLength(3),Validators.required])]
+    });
+
   }
 
-  disease = new FormControl('', [Validators.pattern('^[a-zA-Z ]*$')]);
+  get d() {
+    return this.searchForm.get('disease');
+  }
+  
 
 }

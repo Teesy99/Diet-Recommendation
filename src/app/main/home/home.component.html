@@ -2,7 +2,7 @@
 <div class="image">
         <div class="welcome">
                         <div >
-                                    <h3>Welcome to our website!</h3>
+   <h3>Welcome to our website!</h3>
                                 </div>
                                 <div>
                                         <h3>We provide you online diet recommendation</h3>
@@ -18,16 +18,17 @@
     
     <mat-card>
         <mat-card-content class="head">
-                <h2>Please Enter your disease</h2>
+                <h2>Please enter your disease</h2>
                 </mat-card-content>
-                <div id="test" class="field" >
+                <div id="test" class="field" [formGroup]="searchForm">
                         <mat-form-field appearance="fill" class="fullwidth">
                                 <mat-label>Enter Disease</mat-label>
-                                <input matInput  [pattern]="'^[a-zA-Z ]*$'" [formControl]="disease"> 
-                                <mat-error *ngIf="disease.invalid && disease.touched">
-                                        <small *ngIf="disease.errors?.pattern" class="text-danger">Invalid input</small>
+                                <input matInput  [pattern]="'^[a-zA-Z ]*$'"  [class.is-invalid]="d.invalid && d.touched"  formControlName="disease"> 
+                                <mat-error *ngIf="d.invalid && d.touched">
+                                        <small *ngIf="d.errors?.pattern" class="text-danger">Invalid input</small>
+                                        <small *ngIf="d.errors?.required" class="text-danger">Please provide an input</small>
                                       </mat-error>
-                                      <button mat-icon-button matSuffix color="primary" aria-label="Example icon-button with a heart icon">
+                                      <button mat-icon-button matSuffix [disabled]="searchForm.invalid"  routerLink="/services"  color="primary" aria-label="Example icon-button with a heart icon">
                                         <mat-icon>search</mat-icon>
                                       </button>
                               </mat-form-field>
