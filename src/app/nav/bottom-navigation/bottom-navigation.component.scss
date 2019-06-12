@@ -3,9 +3,13 @@
     background: rgb(27, 172, 99);
     width: 100%;
     padding: 0;
+    position: inherit;
     justify-content: center;
 }
 
 .d-links{
     display: flex;
+    color: white;
 }
+
+

@@ -11,7 +11,8 @@ import { ServicesComponent } from './main/services/services.component';
 import { AdviceComponent } from './main/advice/advice.component';
 import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
-import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule} from '@angular/material'
+import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule} from '@angular/material'
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,11 @@ import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormF
     MatIconModule,
     MatMenuModule,
     MatCardModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

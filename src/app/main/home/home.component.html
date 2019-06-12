@@ -1,26 +1,85 @@
 <div class="content">
 <div class="image">
-    <div >
-            <h3>Welcome to our website!</h3>
-    </div>
-    <div>
-            <h3>We provide you online diet recommendation</h3>
-    </div>
-    <div>
-        <h3>for your health</h3>
-    </div>
+        <div class="welcome">
+                        <div >
+   <h3>Welcome to our website!</h3>
+                                </div>
+                                <div>
+                                        <h3>We provide diet recommendation </h3>
+                                </div>
+                                <div>
+                                    <h3>according to the disease</h3>
+                                </div>
+<div>
+        <h3>for you to live a healthy life</h3>
 </div>
-<div class="search">
-        <mat-card>
-        <mat-card-content>
-                <h2>Please Enter your disease</h2>
+                                <div>
+                                                <button mat-raised-button class="btn"  routerLink="/services">MORE INFO</button>
+                                </div>
+                            
+        </div>
+    
+    <mat-card>
+        <mat-card-content class="head">
+                <h2>Let Us Help You Find A Correct Diet!</h2>
                 </mat-card-content>
-                <mat-form-field appearance="outline">
-                        <mat-label>Outline form field</mat-label>
-                        <input matInput placeholder="Placeholder">
-                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-                        <mat-hint>Hint</mat-hint>
-                      </mat-form-field>
+                <div id="test" class="field" [formGroup]="searchForm">
+                        <mat-form-field appearance="fill" class="fullwidth">
+                                <mat-label>Enter Disease</mat-label>
+                                <input matInput  [pattern]="'^[a-zA-Z ]*$'"  [class.is-invalid]="d.invalid && d.touched"  formControlName="disease"> 
+                                <mat-error *ngIf="d.invalid && d.touched">
+                                        <small *ngIf="d.errors?.pattern" class="text-danger">Invalid input</small>
+                                        <small *ngIf="d.errors?.required" class="text-danger">You cannot make an empty search</small>
+                                      </mat-error>
+                                      <button mat-icon-button matSuffix [disabled]="searchForm.invalid"  routerLink="/services"  color="primary" aria-label="Example icon-button with a heart icon">
+                                        <mat-icon>search</mat-icon>
+                                      </button>
+                              </mat-form-field>
+                </div>
                 </mat-card>
+
+                        <mat-tab-group dynamicHeight id="diet">
+                                <mat-tab label="Eating A Balanced Diet">
+                                  <mat-card class="example-card">
+  <img mat-card-image src="https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500">
+  <mat-card-content>
+    <h3>
+                Eating a healthy, balanced diet is an important part of maintaining good health, and can help you feel your best.
+    </h3>
+    <div>
+                <button mat-raised-button class="btn"  routerLink="/advice">KNOW MORE</button>
+    </div>
+  </mat-card-content>
+</mat-card>
+                                </mat-tab>
+                                <mat-tab label="Food Groups In Diet">
+                                                <mat-card class="example-card">
+                                                                <img mat-card-image src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500">
+                                                                <mat-card-content>
+                                                                  <h3>
+                                                                                The Eatwell Guide shows that to have a healthy, balanced diet, people should try to:
+
+eat at least 5 portions of a variety of fruit and vegetables every day (see 5 A Day)
+                                                                  </h3>
+                                                                  <div>
+                                                                              <button mat-raised-button class="btn"  routerLink="/advice">KNOW MORE</button>
+                                                                  </div>
+                                                                </mat-card-content>
+                                                              </mat-card>
+                                </mat-tab>
+                                <mat-tab label="Fruits And Vegetables">
+                                                <mat-card class="example-card">
+                                                                <img mat-card-image src="https://images.pexels.com/photos/890507/pexels-photo-890507.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500">
+                                                                <mat-card-content>
+                                                                  <h3>
+                                                                                Fruit and vegetables are a good source of vitamins and minerals and fibre, and should make up just over a third of the food you eat each day.
+                                                                  </h3>
+                                                                  <div>
+                                                                              <button mat-raised-button class="btn"  routerLink="/advice">KNOW MORE</button>
+                                                                  </div>
+                                                                </mat-card-content>
+                                                              </mat-card>
+                                </mat-tab>
+                              </mat-tab-group>
 </div>
 </div>

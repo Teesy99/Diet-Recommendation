@@ -33,7 +33,7 @@
 .example-icon{
 background:none;
 border: 0;
-padding: 5px 8px;
+padding: 0px 8px;
 color: white;
 }
 
@@ -44,6 +44,7 @@ color: white;
 @media screen and (min-width: 780px) {
 .d-links{
     display: flex;
+    color: white;
 }
 
 .m-links{
