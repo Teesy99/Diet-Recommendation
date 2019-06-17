@@ -13,6 +13,12 @@ import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
 import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule} from '@angular/material'
 import { ReactiveFormsModule } from '@angular/forms';
+import { FoodComponent } from './main/food/food.component';
+import { DairyComponent } from './dairy/dairy.component';
+import { MealComponent } from './meal/meal.component';
+import { FruitsComponent } from './fruits/fruits.component';
+import { HerbComponent } from './herb/herb.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +29,13 @@ import { ReactiveFormsModule } from '@angular/forms';
     ServicesComponent,
     AdviceComponent,
     RemedyBlogComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    FoodComponent,
+    DairyComponent,
+    MealComponent,
+    FruitsComponent,
+    HerbComponent,
+    
   ],
   imports: [
     BrowserModule,
