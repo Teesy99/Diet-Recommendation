@@ -1,3 +1,135 @@
-<p>
-  advice works!
-</p>
+
+<div class="content">
+<div class="advice">
+    <mat-accordion class="head">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Food and Diet
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <mat-list class="pointer">
+              <mat-list-item>
+                  <a (click)="jumpToId('nutrition')">Food Groups In Your Diet</a>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>
+                <a (click)="jumpToId('fruits')">Fruits And Vegetables</a>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>
+                <a (click)="jumpToId('starch')"> Starch Foods</a>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+              <mat-list-item>
+                  <a (click)="jumpToId('milk')">Milk And Dairy Foods</a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <a (click)="jumpToId('protein')">Proteins</a>
+                  </mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <div class="title">
+<h4>EAT HEALTHY</h4>
+      </div>
+
+      <div class="details">
+        <mat-card class="example-card">
+          <img mat-card-image src="https://images.pexels.com/photos/247685/pexels-photo-247685.png?auto=compress&cs=tinysrgb&dpr=1&w=500">
+          <mat-card-title>Eating A Balanced Diet</mat-card-title>
+          <mat-card-content>
+            <p>
+              Eating a healthy, balanced diet is an important part of maintaining good health, and can help you feel your best.
+This means eating a wide variety of foods in the right proportions, and consuming the right amount of food and drink to achieve and maintain a healthy body weight.
+            </p>
+            <p>
+                This page covers healthy eating advice for the general population.       
+            </p>
+            <p>
+                People with special dietary needs or a medical condition should ask their doctor or a registered dietitian for advice.
+            </p>
+          </mat-card-content>
+        </mat-card>
+     
+          <mat-card class="example-card" >
+              <img mat-card-image src="https://images.pexels.com/photos/793759/pexels-photo-793759.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <h2 id="nutrition">Food Groups In Your Diet</h2>
+              <mat-card-content>
+                <p>
+                    Th Guide shows that to have a healthy, balanced diet, people should try to:
+                </p>
+               <ul>
+                 <li>eat at least 5 portions of a variety of fruit and vegetables every day </li>
+                 <li>base meals on higher fibre starchy foods like potatoes, bread, rice or pasta</li>
+                 <li>have some dairy or dairy alternatives (such as soya drinks)</li>
+                 <li>eat some beans, pulses, fish, eggs, meat and other protein</li>
+                 <li>choose unsaturated oils and spreads, and eat them in small amounts</li>
+                 <li>drink plenty of fluids (at least 6 to 8 glasses a day)</li>
+               </ul>
+               <p>If you're having foods and drinks that are high in fat, salt and sugar, have these less often and in small amounts.</p>
+               <p>The  Guide does not apply to children under the age of 2 because they have different nutritional needs.</p>
+              </mat-card-content>
+            </mat-card>
+      
+          <mat-card class="example-card" >
+              <img mat-card-image src="https://images.pexels.com/photos/235294/pexels-photo-235294.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <h2 id="fruits">Fruits And Vegetables</h2>
+              <mat-card-content>
+                <p>
+                    Fruit and vegetables are a good source of vitamins and minerals and fibre, and should make up just over a third of the food you eat each day.
+                </p>
+               <p>It's recommended that you eat at least 5 portions of a variety of fruit and vegetables every day. They can be fresh, frozen, canned, dried or juiced.</p>       
+            <p>A portion is:</p>  
+            <ul>
+              <li>80g of fresh, canned or frozen fruit and vegetables</li>
+              <li>30g of dried fruit – which should be kept to mealtimes</li>
+              <li>150ml glass of fruit juice or smoothie – but do not have more than 1 portion a day as these drinks are sugary and can damage teeth</li>
+            </ul>
+            <p>Just 1 apple, banana, pear or similar-sized fruit is 1 portion each.</p>
+            <p>Adding a tablespoon of dried fruit, such as raisins, to your morning cereal is an easy way to get 1 portion.</p>
+            <p>In the evening, have a portion of vegetables with dinner and fresh fruit with plain, lower fat yoghurt for dessert to reach your 5 A Day. </p>
+          </mat-card-content>
+            </mat-card>
+
+            <mat-card class="example-card" >
+                <img mat-card-image src="https://images.pexels.com/photos/1487511/pexels-photo-1487511.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940">
+                  <h2 id="starch">Starch Foods In Your Diet</h2>
+                <mat-card-content>
+                 <p>Starchy foods should make up just over a third of everything you eat. This means your meals should be based on these foods.</p>
+                 <p>Choose wholegrain or wholemeal varieties of starchy foods, such as brown rice, wholewheat pasta, and brown, wholemeal or higher fibre white bread.</p>
+                 <p>They contain more fibre, and usually more vitamins and minerals, than white varieties.</p>
+                 <p>Potatoes with the skins on are a great source of fibre and vitamins. For example, when having boiled potatoes or a jacket potato, eat the skin too.</p>
+            </mat-card-content>
+              </mat-card>
+
+              <mat-card class="example-card" >
+                  <img mat-card-image src="https://images.pexels.com/photos/1446318/pexels-photo-1446318.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                    <h2 id="milk">Milk And Dairy Foods</h2>
+                  <mat-card-content>
+<p>Milk and dairy foods, such as cheese and yoghurt, are good sources of protein. They also contain calcium, which helps keep your bones healthy.</p>
+<p>Go for lower fat and lower sugar products where possible.</p>
+<p>Choose semi-skimmed, 1% fat or skimmed milk, as well as lower fat hard cheeses or cottage cheese, and lower fat, lower sugar yoghurt.</p>
+<p>Dairy alternatives, such as soya drinks, are also included in this food group.</p>
+                  </mat-card-content>
+                </mat-card>
+
+                <mat-card class="example-card" >
+                  <img mat-card-image src="https://images.pexels.com/photos/262959/pexels-photo-262959.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                    <h2 id="protein">Proteins</h2>
+                  <mat-card-content>
+<p>Beans, pulses, fish, eggs, meat and other proteins-These foods are all good sources of protein, which is essential for the body to grow and repair itself.</p>
+<p>Meat is a good source of protein, vitamins and minerals, including iron, zinc and B vitamins. It's also one of the main sources of vitamin B12.</p>
+<p>Choose lean cuts of meat and skinless poultry whenever possible to cut down on fat. Always cook meat thoroughly.</p>
+<p>Try to eat less red and processed meat like bacon, ham and sausages.</p>
+<p>Eggs and fish are also good sources of protein, and contain many vitamins and minerals. Oily fish is particularly rich in omega-3 fatty acids.</p>
+<p>Pulses, including beans, peas and lentils, are naturally very low in fat and high in fibre, protein, vitamins and minerals.</p>
+<p>Nuts are high in fibre, and unsalted nuts make a good snack. But they do still contain high levels of fat, so eat them in moderation.</p>
+                  </mat-card-content>
+                </mat-card>
+  </div>
+</div>
+</div>
