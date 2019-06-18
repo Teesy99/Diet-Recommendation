@@ -22,7 +22,7 @@ const routes: Routes = [
   { path:'Dairy', component: DairyComponent},
   { path:'meal', component: MealComponent},
   { path:'Fruits', component: FruitsComponent},
-  { path:'Herbs', component: HerbComponent},
+  { path:'Herb', component: HerbComponent},
   { path: '**', component: PagenotfoundComponent }
 
 ];

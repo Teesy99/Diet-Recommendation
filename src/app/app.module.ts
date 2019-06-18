@@ -14,10 +14,10 @@ import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.componen
 import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule} from '@angular/material'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FoodComponent } from './main/food/food.component';
-import { DairyComponent } from './dairy/dairy.component';
-import { MealComponent } from './meal/meal.component';
-import { FruitsComponent } from './fruits/fruits.component';
-import { HerbComponent } from './herb/herb.component';
+import { DairyComponent } from './main/dairy/dairy.component';
+import { MealComponent } from './main/meal/meal.component';
+import { FruitsComponent } from './main/fruits/fruits.component';
+import { HerbComponent } from './main/herb/herb.component';
 
 
 @NgModule({
