@@ -1,0 +1,73 @@
+.image{
+    background: url(https://images.pexels.com/photos/461428/pexels-photo-461428.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  h2{
+    font-weight: 500;
+ color: white;
+ margin-top: 0;
+text-decoration: underline;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.contnt{
+    height: auto;
+margin: 80px 40px 0px 40px;
+padding-bottom: 15px;
+}
+
+.example-card {
+    max-width: 300px;
+    margin-top: 15px;
+  }
+
+  .mat-card{
+    background-color: rgba(83, 60, 60, 0.66);
+  }
+
+  h3{
+      margin: 0px 0px 10px 0px;
+      color: white;
+  }
+  p{
+      color: white;
+  }
+
+  li{
+      color: white;
+  }
+
+  .mat-card-image{
+      height: 220px;
+  }
+
+
+  @media screen and (min-width: 780px){
+      .contnt{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .example-card {
+        margin-right: 20px;
+      }
+  }
+
+  #more {display: none;}
+  #more1 {display: none;}
+  #more2 {display: none;}
+  #more3 {display: none;}
+  #more4 {display: none;}
+ 

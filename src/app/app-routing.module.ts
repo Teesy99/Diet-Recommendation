@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent},
   { path: 'advice', component: AdviceComponent },
-  { path: 'remedy', component: RemedyBlogComponent },
+  { path: 'blog', component: RemedyBlogComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
