@@ -6,6 +6,7 @@ import { AdviceComponent } from './main/advice/advice.component';
 import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
 import { ContactComponent } from './main/contact/contact.component';
+import { TCComponent } from './main/tc/tc.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'advice', component: AdviceComponent },
   { path: 'blog', component: RemedyBlogComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'tc', component: TCComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
