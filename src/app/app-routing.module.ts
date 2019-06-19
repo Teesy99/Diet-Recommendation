@@ -17,12 +17,16 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'services', component: ServicesComponent},
   { path: 'advice', component: AdviceComponent },
+<<<<<<< HEAD
   { path: 'remedy', component: RemedyBlogComponent },
   { path:'food', component: FoodComponent},
   { path:'Dairy', component: DairyComponent},
   { path:'meal', component: MealComponent},
   { path:'Fruits', component: FruitsComponent},
   { path:'Herb', component: HerbComponent},
+=======
+  { path: 'blog', component: RemedyBlogComponent },
+>>>>>>> cc99983d271114aaae647e4904ff567ccd520185
   { path: '**', component: PagenotfoundComponent }
 
 ];

@@ -11,7 +11,7 @@ import { ServicesComponent } from './main/services/services.component';
 import { AdviceComponent } from './main/advice/advice.component';
 import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
-import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule, MatExpansionModule, MatDividerModule, MatListModule, MatGridListModule} from '@angular/material'
+import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule, MatExpansionModule, MatDividerModule, MatListModule} from '@angular/material'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FoodComponent } from './main/food/food.component';
 import { DairyComponent } from './main/dairy/dairy.component';
@@ -52,8 +52,7 @@ import { HerbComponent } from './main/herb/herb.component';
     MatTabsModule,
     MatExpansionModule,
     MatDividerModule,
-    MatListModule,
-    MatGridListModule
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
