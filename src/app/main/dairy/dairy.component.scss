@@ -1,21 +1,26 @@
-.content{
-    text-align: left;
-    margin-left:2rem;
-    margin-block-start: 2%;
-    margin-right:10rem;
-    text-combine-upright: auto;
-    margin-block-end: 12%;
+.image{
+    max-width: 100px;
+    margin-left:80%;
     
+    margin-top:3rem;
+
+}
+.content{
+    height: auto;
+    margin: 15px 20px;
+    background-color: white;
+    justify-content: center;
+    width:auto;
+    text-align: left;
+}
+div .btn{
+    margin-top:2rem;
 }
 h2{
-    
-    color:grey;
+    text-decoration: underline;
+    color:black;
     
 }
 P{
-    max-width: 74%;
-}
-.image{
-    max-width: 300px;
-    margin-right: 20%;
+    width: 74%;
 }
