@@ -13,6 +13,9 @@ import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
 import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule, MatExpansionModule, MatDividerModule, MatListModule} from '@angular/material'
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './main/about/about.component';
+import { ContactComponent } from './main/contact/contact.component';
+import { TCComponent } from './main/tc/tc.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { ReactiveFormsModule } from '@angular/forms';
     ServicesComponent,
     AdviceComponent,
     RemedyBlogComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AboutComponent,
+    ContactComponent,
+    TCComponent
   ],
   imports: [
     BrowserModule,
