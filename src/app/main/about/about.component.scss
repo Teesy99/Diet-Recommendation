@@ -1,0 +1,77 @@
+.image{
+    background: url(https://images.pexels.com/photos/2290543/pexels-photo-2290543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-1
+  {
+      display: flex;
+      justify-content: center;
+  }
+
+ .para{
+     text-align: center;
+     color: white;
+     font-weight: 500;
+ }
+
+ h2{
+     color: white;
+ }
+
+ p{
+     margin-bottom: 0;
+     padding-bottom: 15px;
+ }
+
+ .card {
+    max-width: 245px;
+    margin-bottom: 20px;
+    perspective: 1000px; 
+    backface-visibility: hidden; 
+    transition: opacity .3s ease 0s, transform .3s ease 0s;
+    transform: scale(1) rotate(0.001deg); 
+    background: rgba(34, 79, 22, 0.35);
+    color: white;
+  }
+
+  .mat-card-image:first-child{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+@media screen and (min-width: 780px){
+    .about{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card {
+        margin-left: 20px;
+      }
+}
+
+h3{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.card:hover {
+    z-index: 10;
+    transform: scale(1.1) rotate(0.001deg);
+  }
