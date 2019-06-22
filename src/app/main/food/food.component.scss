@@ -10,15 +10,23 @@ a:active{
 }
 .content{
     height: auto;
-    margin: 15px 20px 15px 20px;
+    margin: 15px 20px;
     background-color: white;
     justify-content: center;
     width:auto;
     text-align: left;
+    
+}
+ li{
+    font-size:20px;
 }
 h2{
     text-decoration: underline;
+    font-size:20px;
 }
 div .btn{
     margin-top:2rem;
+}
+p{
+    font-size:20px;
 }

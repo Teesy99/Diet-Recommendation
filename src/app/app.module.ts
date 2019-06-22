@@ -18,6 +18,7 @@ import { DairyComponent } from './main/dairy/dairy.component';
 import { MealComponent } from './main/meal/meal.component';
 import { FruitsComponent } from './main/fruits/fruits.component';
 import { HerbComponent } from './main/herb/herb.component';
+import { BeverageComponent } from './main/beverage/beverage.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { HerbComponent } from './main/herb/herb.component';
     MealComponent,
     FruitsComponent,
     HerbComponent,
+    BeverageComponent,
     
   ],
   imports: [

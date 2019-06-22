@@ -10,6 +10,7 @@ import { DairyComponent } from './main/dairy/dairy.component';
 import { MealComponent } from './main/meal/meal.component';
 import { FruitsComponent } from './main/fruits/fruits.component';
 import { HerbComponent } from './main/herb/herb.component';
+import { BeverageComponent } from './main/beverage/beverage.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path:'meal', component: MealComponent},
   { path:'Fruits', component: FruitsComponent},
   { path:'Herb', component: HerbComponent},
+  {path:'Beverage', component:BeverageComponent},
   { path: '**', component: PagenotfoundComponent }
 
 ];
