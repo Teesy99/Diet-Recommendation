@@ -1,14 +1,29 @@
-.content{
-    height: auto;
-    margin: 15px 20px;
-    background-color: white;
-    justify-content: center;
-    width:auto;
-    text-align: left;
+
+.content, .contains{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+   
+    
+}
+.box{
+    max-width: 650px;
+    margin-bottom: 15px;
+}
+.heading{
+    
+    max-width: 800px;
+    margin-bottom: 10px;
+  }
+h2{
+    font-size:30px;
+    text-align: center;
+    text-decoration: underline;
 }
 h3{
-    text-decoration: underline;
-    font-size:20px;
+    
+    font-size:30px;
 }
 p{
     font-size: 20px;

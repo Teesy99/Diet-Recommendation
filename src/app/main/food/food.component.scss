@@ -9,24 +9,30 @@ a:active{
     color:green;
 }
 .content{
-    height: auto;
-    margin: 15px 20px;
-    background-color: white;
-    justify-content: center;
-    width:auto;
-    text-align: left;
-    
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+.contains{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
 }
  li{
     font-size:20px;
 }
 h2{
-    text-decoration: underline;
-    font-size:20px;
+    
+    font-size:30px;
 }
 div .btn{
     margin-top:2rem;
 }
 p{
     font-size:20px;
+}
+h3{
+    font-size:30px;
+    text-align: center;
+    text-decoration: underline;
 }
