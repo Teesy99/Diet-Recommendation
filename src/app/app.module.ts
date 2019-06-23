@@ -13,6 +13,7 @@ import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
 import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule, MatExpansionModule, MatDividerModule, MatListModule} from '@angular/material'
 import { ReactiveFormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { FoodComponent } from './main/food/food.component';
 import { DairyComponent } from './main/dairy/dairy.component';
 import { MealComponent } from './main/meal/meal.component';
@@ -20,6 +21,11 @@ import { FruitsComponent } from './main/fruits/fruits.component';
 import { HerbComponent } from './main/herb/herb.component';
 import { BeverageComponent } from './main/beverage/beverage.component';
 
+=======
+import { AboutComponent } from './main/about/about.component';
+import { ContactComponent } from './main/contact/contact.component';
+import { TCComponent } from './main/tc/tc.component';
+>>>>>>> fe1460f6e775d7bb487d3bd6da01eb073640b468
 
 @NgModule({
   declarations: [
@@ -31,6 +37,7 @@ import { BeverageComponent } from './main/beverage/beverage.component';
     AdviceComponent,
     RemedyBlogComponent,
     PagenotfoundComponent,
+<<<<<<< HEAD
     FoodComponent,
     DairyComponent,
     MealComponent,
@@ -38,6 +45,11 @@ import { BeverageComponent } from './main/beverage/beverage.component';
     HerbComponent,
     BeverageComponent,
     
+=======
+    AboutComponent,
+    ContactComponent,
+    TCComponent
+>>>>>>> fe1460f6e775d7bb487d3bd6da01eb073640b468
   ],
   imports: [
     BrowserModule,

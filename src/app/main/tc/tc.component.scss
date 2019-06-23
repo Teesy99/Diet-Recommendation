@@ -1,0 +1,33 @@
+  .image{
+      background: url(https://images.unsplash.com/photo-1534254910684-68bdc1d69cf7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+      background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .flex-1
+  {
+      display: flex;
+      justify-content: center;
+  }
+
+ .para{
+     font-weight: 500;
+     padding: 0 0.8rem;
+     color: white;
+ }
+ 
+ .para p{
+    font-weight: 400;
+    margin-left: 0.3rem;
+    color: white;
+}
+
+p{
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: white;
+}
