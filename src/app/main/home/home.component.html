@@ -28,7 +28,6 @@
                                 <mat-label>Enter Disease</mat-label>
                                 <input matInput  [pattern]="'^[a-zA-Z ]*$'"  [class.is-invalid]="d.invalid && d.touched"  formControlName="disease"> 
                                 <mat-error *ngIf="d.invalid && d.touched">
-                                        <small *ngIf="d.errors?.pattern" class="text-danger">Invalid input</small>
                                         <small *ngIf="d.errors?.required" class="text-danger">You cannot make an empty search</small>
                                       </mat-error>
                                       <button mat-icon-button matSuffix [disabled]="searchForm.invalid"  routerLink="/services"  color="primary" aria-label="Example icon-button with a heart icon">

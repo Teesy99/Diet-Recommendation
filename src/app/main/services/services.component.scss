@@ -1,0 +1,72 @@
+
+
+.content1{
+    margin: 20;
+    text-align: center;
+}
+.content2, .content3{
+    margin: 20;
+    text-align: center;
+    flex-basis: 0%;
+    display: flex;
+    
+
+}
+.content2 div{
+    border:1px #ccc solid;
+    padding:10px;
+}
+.content3 div{
+    border:1px #ccc solid;
+    padding:10px;
+}
+h1{
+    text-align: center;
+}
+.box1{
+    
+    margin-left:3rem;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    max-width: 400px;
+    flex:1;
+}
+
+.box2{
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-right: 4rem;
+    flex:1;
+}
+.box3{
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    max-width: 400px;
+    flex:1;
+}
+.box4{
+    margin-left:3rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-right: 4rem;
+    flex:1;
+}
+.box5{
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-right: 4rem;
+    flex:1;
+}
+.box6{
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-right: 4rem;
+    flex:1;
+}
+.btn{
+    color: white;
+background: green;
+}
+p{
+    text-align: left;
+}

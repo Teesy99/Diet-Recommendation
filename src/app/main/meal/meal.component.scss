@@ -1,0 +1,30 @@
+h3{
+    font-size:30px;
+    
+   
+}
+h2{
+    font-size:30px;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    font-size:20px;
+}
+li{
+    font-size:20px;
+}
+.contains{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.content{
+    max-width: 800px;
+    margin-bottom: 10px;
+}
+div .btn{
+    margin-top:2rem;
+}

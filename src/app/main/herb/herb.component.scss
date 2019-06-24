@@ -1,0 +1,38 @@
+.content, .follows{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 15px;
+   
+    
+}
+.contains{
+    
+    max-width: 800px;
+    margin-bottom: 10px;
+  
+}
+
+div .btn{
+    margin-top:2rem;
+}
+h4{
+    font-size:30px;
+    text-align: center;
+    text-decoration: underline;
+   
+}
+li{
+    font-size:20px;
+}
+h2{
+    font-size:30px;
+}
+p{
+    font-size:20px;
+}
+.box{
+    
+    max-width: 650px;
+    margin-bottom: 15px;
+  }
