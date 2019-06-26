@@ -11,7 +11,7 @@ import { ServicesComponent } from './main/services/services.component';
 import { AdviceComponent } from './main/advice/advice.component';
 import { RemedyBlogComponent } from './main/remedy-blog/remedy-blog.component';
 import { PagenotfoundComponent } from './main/pagenotfound/pagenotfound.component';
-import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule, MatExpansionModule, MatDividerModule, MatListModule} from '@angular/material'
+import {MatCardModule, MatToolbarModule, MatIconModule, MatMenuModule,  MatFormFieldModule, MatInputModule, MatButtonModule, MatTabsModule, MatExpansionModule, MatDividerModule, MatListModule, MatAutocompleteModule} from '@angular/material'
 import { ReactiveFormsModule } from '@angular/forms';
 import { FoodComponent } from './main/food/food.component';
 import { DairyComponent } from './main/dairy/dairy.component';
@@ -23,6 +23,7 @@ import { BeverageComponent } from './main/beverage/beverage.component';
 import { AboutComponent } from './main/about/about.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { TCComponent } from './main/tc/tc.component';
+import { SearchResultComponent } from './main/search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TCComponent } from './main/tc/tc.component';
     BeverageComponent,
     AboutComponent,
     ContactComponent,
-    TCComponent
+    TCComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +61,8 @@ import { TCComponent } from './main/tc/tc.component';
     MatTabsModule,
     MatExpansionModule,
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MatAutocompleteModule
   ],
   providers: [],
   bootstrap: [AppComponent]

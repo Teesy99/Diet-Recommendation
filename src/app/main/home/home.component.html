@@ -26,11 +26,18 @@
                 <div id="test" class="field" [formGroup]="searchForm">
                         <mat-form-field appearance="fill" class="fullwidth">
                                 <mat-label>Enter Disease</mat-label>
-                                <input matInput  [pattern]="'^[a-zA-Z ]*$'"  [class.is-invalid]="d.invalid && d.touched"  formControlName="disease"> 
+                                <input matInput  [pattern]="'^[a-zA-Z ]*$'"  [class.is-invalid]="d.invalid && d.touched" [matAutocomplete]="autoGroup" formControlName="disease"> 
+                                <mat-autocomplete #autoGroup="matAutocomplete">
+                                  <mat-optgroup *ngFor="let group of diseaseGroupOptions | async" [label]="group.letter">
+                                    <mat-option *ngFor="let name of group.names" [value]="name">
+                                      {{name}}
+                                    </mat-option>
+                                </mat-optgroup>
+                              </mat-autocomplete>
                                 <mat-error *ngIf="d.invalid && d.touched">
                                         <small *ngIf="d.errors?.required" class="text-danger">You cannot make an empty search</small>
                                       </mat-error>
-                                      <button mat-icon-button matSuffix [disabled]="searchForm.invalid"  routerLink="/services"  color="primary" aria-label="Example icon-button with a heart icon">
+                                      <button mat-icon-button matSuffix [disabled]="searchForm.invalid"  routerLink="/search"  color="primary" aria-label="Example icon-button with a heart icon">
                                         <mat-icon>search</mat-icon>
                                       </button>
                               </mat-form-field>

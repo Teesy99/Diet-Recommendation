@@ -14,6 +14,7 @@ import { MealComponent } from './main/meal/meal.component';
 import { FruitsComponent } from './main/fruits/fruits.component';
 import { HerbComponent } from './main/herb/herb.component';
 import { BeverageComponent } from './main/beverage/beverage.component';
+import { SearchResultComponent } from './main/search-result/search-result.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'blog', component: RemedyBlogComponent },
   { path: 'about', component: AboutComponent },
   { path: 'contact', component: ContactComponent },
+  {path:'search',component:SearchResultComponent},
   { path: 'tc', component: TCComponent },
   { path: '**', component: PagenotfoundComponent }
 
