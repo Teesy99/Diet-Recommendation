@@ -1,18 +1,31 @@
 <div class="container">
 <div class="head">
-<h2>Stomach Ulcers</h2>
+<h2>{{name}}</h2>
 </div>
 
 <div class="content">
   <mat-card class="example-card">
-    <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpMjCXFhg6QUp4_3RZzdSJ92chnoTuTU_1zTGsxG6nt3faMhaA">
-    <mat-card-title>What Causes Ulcers?</mat-card-title>
+    <img mat-card-image src={{url}}>
+    <mat-card-title>What Causes {{name}}?</mat-card-title>
     <mat-card-content>
       <p>
-        Doctors used to think that certain foods could give you ulcers. 
-        But now we know other things cause them, like taking pain-relieving drugs for a long time or infection with bacteria 
-        called H. pylori.Although food doesn’t cause or treat ulcers, some can make your pain worse, while others may help you heal faster.
+       {{cause}}
       </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <img mat-card-image src={{url1}}>
+    <mat-card-title>Symptoms</mat-card-title>
+    <mat-card-content>
+<p>{{symptoms}}</p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="example-card">
+    <mat-card-title>Diet</mat-card-title>
+    <mat-card-content>
+      {{diet}}
     </mat-card-content>
   </mat-card>
 
@@ -20,7 +33,7 @@
     <img mat-card-image src="https://images.pexels.com/photos/89778/strawberries-frisch-ripe-sweet-89778.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
     <mat-card-title>Fruits</mat-card-title>
     <mat-card-content>
-
+<p>{{fruits}}</p>
     </mat-card-content>
   </mat-card>
 
@@ -28,31 +41,15 @@
     <img mat-card-image src="https://images.pexels.com/photos/35829/isolated-set-vegetables-basket.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500">
     <mat-card-title>Vegetables</mat-card-title>
     <mat-card-content>
-
+<p>{{veg}}</p>
     </mat-card-content>
   </mat-card>
 
   <mat-card class="example-card">
-    <img mat-card-image src="https://images.unsplash.com/photo-1536754870812-0679130712bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-    <mat-card-title>Dairy Products</mat-card-title>
-    <mat-card-content>
-
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="example-card">
-    <img mat-card-image src="https://images.pexels.com/photos/265393/pexels-photo-265393.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-    <mat-card-title>Meat</mat-card-title>
-    <mat-card-content>
-      
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card class="example-card">
-    <img mat-card-image src="https://images.pexels.com/photos/1232152/pexels-photo-1232152.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+    <!-- <img mat-card-image src="https://images.pexels.com/photos/1232152/pexels-photo-1232152.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> -->
     <mat-card-title>Others</mat-card-title>
     <mat-card-content>
-    
+    <p>{{others}}</p>
     </mat-card-content>
   </mat-card>
 
@@ -60,7 +57,7 @@
     <img mat-card-image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvMO-vI7NdE8LyYV0D57qc4h-tUocam2ExUtHwFiI-H2Dx41Ag">
     <mat-card-title>What not to eat?</mat-card-title>
     <mat-card-content>
-   
+   <p>{{avoid}}</p>
     </mat-card-content>
   </mat-card>
 </div>

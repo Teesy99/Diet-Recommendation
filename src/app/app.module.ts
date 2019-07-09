@@ -24,6 +24,8 @@ import { AboutComponent } from './main/about/about.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { TCComponent } from './main/tc/tc.component';
 import { SearchResultComponent } from './main/search-result/search-result.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -62,7 +64,8 @@ import { SearchResultComponent } from './main/search-result/search-result.compon
     MatExpansionModule,
     MatDividerModule,
     MatListModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

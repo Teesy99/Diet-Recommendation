@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
+import { NavigationExtras, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,6 @@ import { map, startWith } from 'rxjs/operators';
 })
 export class HomeComponent implements OnInit {
  
-  
   searchForm: FormGroup;
 
   diseaseGroups: DiseaseGroup[] = [{
@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
   
   diseaseGroupOptions: Observable<DiseaseGroup[]>;
 
-  constructor(private fb:FormBuilder) { }
+  constructor(private fb:FormBuilder,private router: Router) { }
 
   ngOnInit() {
 
@@ -53,6 +53,16 @@ export class HomeComponent implements OnInit {
 
     return this.diseaseGroups;
   }
+
+  onSubmit(){
+let navigationExtras: NavigationExtras = {
+  queryParams: {
+      "name":this.searchForm.value.disease
+  }
+};
+this.router.navigate(["/search"], navigationExtras);
+  }
+
   get d() {
     return this.searchForm.get('disease');
   }
