@@ -14,16 +14,17 @@ export class HomeComponent implements OnInit {
   searchForm: FormGroup;
 
   diseaseGroups: DiseaseGroup[] = [{
-      letter: 'A',
-      names: ['Anaemia']
-    },
-    {
     letter: 'C',
-    names: ['Constipation','Common Cold']
+    names: ['Constipation']
   }, {
     letter: 'D',
     names: ['Diabetes','Dehydration','Diarrhea','Dysentry',]
-  }]
+  },
+  {
+    letter: 'O',
+    names: ['Obesity']
+  }
+]
   
   diseaseGroupOptions: Observable<DiseaseGroup[]>;
 
