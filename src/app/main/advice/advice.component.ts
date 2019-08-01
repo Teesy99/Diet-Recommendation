@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class AdviceComponent implements OnInit {
-
+  panelOpenState = false;
   constructor() {  
    }
 
